@@ -28,7 +28,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-white">
       <div className="container mx-auto px-6">
         {/* Testimonials */}
         <div className="text-center mb-16">
@@ -44,7 +44,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100"
             >
               <div className="flex items-center mb-4">
                 <Quote size={24} className="text-blue-600 mr-2" />
@@ -72,19 +72,21 @@ const Testimonials = () => {
         </div>
 
         {/* Trusted Partners */}
-        <div className="text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">
-            Trusted by Industry Leaders
-          </h3>
-          <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-            {partners.map((partner, index) => (
-              <div
-                key={index}
-                className="text-lg font-semibold text-gray-600 hover:text-blue-600 transition-colors duration-300 cursor-pointer"
-              >
-                {partner}
-              </div>
-            ))}
+        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+          <div className="text-center">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">
+              Trusted by Industry Leaders
+            </h3>
+            <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
+              {partners.map((partner, index) => (
+                <div
+                  key={index}
+                  className="text-lg font-semibold text-gray-600 hover:text-blue-600 transition-colors duration-300 cursor-pointer"
+                >
+                  {partner}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

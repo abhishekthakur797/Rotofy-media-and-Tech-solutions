@@ -12,7 +12,7 @@ const Careers = () => {
   ];
 
   return (
-    <section id="careers" className="py-20 bg-white">
+    <section id="careers" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -23,12 +23,12 @@ const Careers = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-16">
-          <div className="text-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 text-center">
             <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <Briefcase size={28} className="text-white" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">
               Career Growth
             </h3>
             <p className="text-gray-600 leading-relaxed">
@@ -36,11 +36,11 @@ const Careers = () => {
             </p>
           </div>
 
-          <div className="text-center">
+          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 text-center">
             <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <Users size={28} className="text-white" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">
               Team Culture
             </h3>
             <p className="text-gray-600 leading-relaxed">
@@ -48,11 +48,11 @@ const Careers = () => {
             </p>
           </div>
 
-          <div className="text-center">
+          <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 text-center">
             <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <Rocket size={28} className="text-white" />
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">
               Innovation
             </h3>
             <p className="text-gray-600 leading-relaxed">
@@ -61,7 +61,7 @@ const Careers = () => {
           </div>
         </div>
 
-        <div className="bg-gray-50 rounded-2xl p-8 md:p-12">
+        <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">

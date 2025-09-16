@@ -68,10 +68,10 @@ const Header = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`transition-colors duration-300 ${
+              className={`bg-white rounded-lg p-2 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border border-gray-100 ${
                 isScrolled 
                   ? 'text-gray-700 hover:text-blue-600' 
-                  : 'text-white hover:text-blue-200'
+                  : 'text-gray-700 hover:text-blue-600'
               }`}
               aria-label="Toggle menu"
             >
