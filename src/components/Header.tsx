@@ -82,19 +82,13 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className={`md:hidden mt-4 pb-4 border-t ${
-            isScrolled ? 'border-gray-200' : 'border-white/20'
-          }`}>
-            <div className="flex flex-col space-y-4 pt-4">
+          <div className="md:hidden mt-4 pb-4 bg-white rounded-lg shadow-lg border border-gray-100">
+            <div className="flex flex-col space-y-4 pt-4 px-4 text-center">
               {navigationItems.map((item) => (
                 <button
                   key={item.name}
                   onClick={() => scrollToSection(item.href)}
-                  className={`transition-colors duration-300 font-medium text-left ${
-                    isScrolled 
-                      ? 'text-gray-700 hover:text-blue-600' 
-                      : 'text-white hover:text-blue-200'
-                  }`}
+                  className="transition-colors duration-300 font-medium text-gray-700 hover:text-blue-600"
                 >
                   {item.name}
                 </button>
