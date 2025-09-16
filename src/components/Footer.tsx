@@ -1,7 +1,7 @@
 import React from 'react';
 import { Linkedin, Twitter, Instagram, Heart } from 'lucide-react';
 
-const Footer = () => {
+const Footer = ({ className = '' }: { className?: string }) => {
 
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
@@ -22,7 +22,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className={`bg-gray-900 text-white ${className}`}>
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Company Info */}

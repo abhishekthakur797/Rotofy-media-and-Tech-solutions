@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
-const Header = () => {
+const Header = ({ onMenuToggle }: { onMenuToggle?: (isOpen: boolean) => void }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    onMenuToggle?.(isMenuOpen);
+  }, [isMenuOpen, onMenuToggle]);
 
   useEffect(() => {
     const handleScroll = () => {
