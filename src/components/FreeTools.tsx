@@ -137,7 +137,7 @@ const FreeTools = () => {
                     {tool.id === 'brand-audit' ? 'Get Free Brand Audit' : 
                      tool.id === 'seo-audit' ? 'Get Free SEO Audit' : 
                      tool.id === 'website-speed' ? 'Get Free Speed Test' : 
-                     tool.id === 'code-review' ? 'Get Free Code Review' : 
+                     tool.id === 'code-review' ? 'Free Code Review' : 
                      `Get Free ${tool.title}`}
                   </button>
                 </div>
