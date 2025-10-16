@@ -134,7 +134,11 @@ const FreeTools = () => {
                   </ul>
 
                   <button className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl mt-auto">
-                    Get Free {tool.title}
+                    {tool.id === 'brand-audit' ? 'Get Free Brand Audit' : 
+                     tool.id === 'seo-audit' ? 'Get Free SEO Audit' : 
+                     tool.id === 'website-speed' ? 'Get Free Speed Test' : 
+                     tool.id === 'code-review' ? 'Get Free Code Review' : 
+                     `Get Free ${tool.title}`}
                   </button>
                 </div>
               );
