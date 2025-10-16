@@ -109,7 +109,7 @@ const FreeTools = () => {
               return (
                 <div
                   key={tool.id}
-                  className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 cursor-pointer"
+                  className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 cursor-pointer flex flex-col h-full"
                   onClick={() => handleToolSelect(tool.id)}
                 >
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 mx-auto">
@@ -120,11 +120,11 @@ const FreeTools = () => {
                     {tool.title}
                   </h3>
                   
-                  <p className="text-gray-600 leading-relaxed mb-6 text-center">
+                  <p className="text-gray-600 leading-relaxed mb-6 text-center flex-grow">
                     {tool.description}
                   </p>
 
-                  <ul className="space-y-2">
+                  <ul className="space-y-2 mb-6">
                     {tool.features.map((feature, index) => (
                       <li key={index} className="flex items-center space-x-2 text-sm text-gray-600">
                         <div className="w-1.5 h-1.5 bg-blue-600 rounded-full"></div>
@@ -133,7 +133,7 @@ const FreeTools = () => {
                     ))}
                   </ul>
 
-                  <button className="w-full mt-6 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                  <button className="w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl mt-auto">
                     Get Free {tool.title}
                   </button>
                 </div>
