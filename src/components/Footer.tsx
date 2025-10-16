@@ -1,5 +1,5 @@
 import React from 'react';
-import { Linkedin, Twitter, Instagram, Heart } from 'lucide-react';
+import { Facebook, Instagram, Youtube, Heart } from 'lucide-react';
 
 const Footer = ({ className = '' }: { className?: string }) => {
 
@@ -16,9 +16,9 @@ const Footer = ({ className = '' }: { className?: string }) => {
   ];
 
   const socialLinks = [
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
-    { icon: Twitter, href: '#', label: 'Twitter' },
-    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Facebook, href: 'https://www.facebook.com/RotofyMedia', label: 'Facebook' },
+    { icon: Instagram, href: 'https://www.instagram.com/rotofymedia', label: 'Instagram' },
+    { icon: Youtube, href: 'https://www.youtube.com/@RotofyMedia/shorts', label: 'YouTube' },
   ];
 
   return (
