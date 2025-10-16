@@ -10,6 +10,7 @@ const Footer = ({ className = '' }: { className?: string }) => {
   const navigationItems = [
     { name: 'Home', href: 'hero' },
     { name: 'Services', href: 'services' },
+    { name: 'Free Tools', href: 'free-tools' },
     { name: 'Careers', href: 'careers' },
     { name: 'About Us', href: 'about' },
     { name: 'Contact', href: 'contact' },
